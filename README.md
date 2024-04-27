@@ -31,6 +31,7 @@ sender.GetType().GetProperty("Text").SetValue(sender, "x");
 ```
 Этот код даёт нам x при нажатии на любую кнопку. Проверить это можно просто нажать на "Пуск", и попробовать нажать на любую кнопку. Но перед этим в свойствах выбрать действия и в "Click" вставить "button1_Click", а для Front - Microsoft Sans Serif; 138,25pt.
 
+![image](https://github.com/Diana0986/tic-tac-toe/assets/158996710/b32e1d9b-4762-412e-b3fc-dc3ed7ae5653)
 
 ### 3. Этап: Игрок
 
@@ -54,12 +55,10 @@ sender.GetType().GetProperty("Text").SetValue(sender, "x");
         case 1:
             sender.GetType().GetProperty("Text").SetValue(sender, "x");
             player = 0;
-            label1.Text = "Текущий ход: Игрок 2";
             break;
         case 0:
             sender.GetType().GetProperty("Text").SetValue(sender, "o");
             player = 1;
-            label1.Text = "Текущий ход: Игрок 1";
             break;
     }
 ```
@@ -89,6 +88,9 @@ sender.GetType().GetProperty("Enabled").SetValue(sender, false);
 ```
 
 Данный код меняет true на false в свойстве Enabled, то есть делает наши кнопки не доступными. И у нас получилось, что после нажатия, программа определяет какой ты игрок, ставит нужный знак, а потом делает кнопку не доступной.
+
+![image](https://github.com/Diana0986/tic-tac-toe/assets/158996710/65921625-7f2d-4f84-94a2-92215d38a8a4)
+
 
 ### 4. Этап: Победа
 
@@ -167,7 +169,12 @@ private void playerwin()
     
 А сделали мы это на будущее так как потом мы создадим массив.
 
-### 4. Этап: Хочу ещё
+![image](https://github.com/Diana0986/tic-tac-toe/assets/158996710/4d7706bb-4008-46b6-bc5f-a553da3fbca2)
+![image](https://github.com/Diana0986/tic-tac-toe/assets/158996710/2b95ede1-e8e9-409b-ad8e-d7361843530c)
+
+
+
+### 5. Этап: Хочу ещё
        
 Когда вы сыграли раунд, предположительно вам хочется сыграть и второй, но завершать откладку и запускать её заново это долго и не удобно. Поэтому давайте создадим кнопку рестарта. Перед тем как начать удалите все 9 главных кнопок в форме. :)
 
@@ -234,9 +241,13 @@ private void setButtons()
 }
 ```
 В этом коде мы в каждой кнопке удалили текст, и сделали каждую кнопку обратно доступной.
-               Фотография всего
 
-### 5.Этап: Баллы(Необязательно)
+![image](https://github.com/Diana0986/tic-tac-toe/assets/158996710/fd0bcc61-013e-4b52-a21a-41a4f3baca24)
+
+![image](https://github.com/Diana0986/tic-tac-toe/assets/158996710/186f8da4-d1c6-4346-9bdd-0537b3fa3408)
+
+
+### 6.Этап: Баллы(Необязательно)
 
 Когда вы закончите вашу игру вам может стать интересно кто же из двух игроков победил, и нужно сделать какой то счётчик. Так давайте сделаем это:
 
