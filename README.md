@@ -69,7 +69,7 @@ sender.GetType().GetProperty("Text").SetValue(sender, "x");
 * Следующим шагом нам нужно где то отображать какой именно игрок ходит. Мы переходим обратно в форму и рядом с нашими кнопками добавляем из панели элементов "Label" со свойствами:
     - Location - 651; 26
     - Size - 46; 17
-    - Front - Microsoft Sans Serif; 10,25pt.
+    - Font - Microsoft Sans Serif; 10,25pt.
 
 * Далее возвращаемся к коду и рядом с переменной player задаём текст для "label1":
 ```c#
